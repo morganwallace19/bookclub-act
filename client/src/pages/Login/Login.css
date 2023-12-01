@@ -47,12 +47,13 @@
 
 .login-box input {
     padding: 3px;
-    border: 2px solid black;
+    border: 1.5px solid black;
+    border-radius: 1rem;
 }
 
-.login-inner .btn-register p{
+.login-inner p{
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 1rem;
 }
 .btn-register { 
     background-color: lightblue;

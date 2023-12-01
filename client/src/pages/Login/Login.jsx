@@ -29,7 +29,7 @@ function Login() {
 
                     <div className="login-box">
                         <label htmlFor="email">
-                            <strong>Email</strong>
+                            <strong>Email: </strong>
                         </label>
                         <input type="email"
                         placeholder="Enter Email"
@@ -41,8 +41,8 @@ function Login() {
                     </div>
 
                     <div className="login-box">
-                        <label htmlFor="email">
-                            <strong>Password</strong>
+                        <label htmlFor="password">
+                            <strong>Password: </strong>
                         </label>
                         <input type="password"
                         placeholder="Enter Password"
@@ -53,13 +53,17 @@ function Login() {
                         />
                     </div>
 
+                    <div className="buttons">
                     <button type="submit" className="btn-submit">
                         Login
                     </button>
+                    </div>
                     </form>
-                    <p>Already Have an Account</p>
+                    <p>Don't have an account? Register</p>
+                    <div className="buttons">
                     <Link to="/signup"><button className="btn-register">Register</button>
                     </Link>
+                    </div>
 
             </div>
         </div>

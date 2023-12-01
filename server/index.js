@@ -1,9 +1,13 @@
 const express = require("express")
 const mongoose = require('mongoose')
+const path = require('path')
 const cors = require("cors")
 const UserModel = require('./models/User')
 
+
 const app = express()
+
+app.use(express.static(path.join(__dirname + "/public")))
 app.use(express.json())
 app.use(cors())
 

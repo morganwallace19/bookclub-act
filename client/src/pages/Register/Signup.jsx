@@ -15,7 +15,7 @@ function Signup() {
         axios.post('http://localhost:3001/register', { name, email, password })
             .then(result => {
                 console.log(result)
-                navigate('./login')
+                navigate('/login')
             })
             .catch(err => console.log(err))
     }
@@ -27,7 +27,7 @@ function Signup() {
                 <form onSubmit={handleSubmit}>
                     <div className="register-box">
                         <label htmlFor="name">
-                            <strong>Name</strong>
+                            <strong>Name: </strong>
                         </label>
                         <input type="text"
                             placeholder="Enter Name"
@@ -40,7 +40,7 @@ function Signup() {
 
                     <div className="register-box">
                         <label htmlFor="email">
-                            <strong>Email</strong>
+                            <strong>Email: </strong>
                         </label>
                         <input type="text"
                             placeholder="Enter Email"
@@ -50,10 +50,10 @@ function Signup() {
                             onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
-
+                    
                     <div className="register-box">
-                        <label htmlFor="email">
-                            <strong>Password</strong>
+                        <label htmlFor="password">
+                            <strong>Password: </strong>
                         </label>
                         <input type="text"
                             placeholder="Enter Password"
@@ -64,13 +64,17 @@ function Signup() {
                         />
                     </div>
                     
+                    <div className="buttons">
                     <button type="submit" className="btn-submit">
                         Register
                     </button>
+                    </div>
                 </form>
-                <p>Already Have an Account</p>
+                <p>Already Have an Account? Login</p>
+                <div className="buttons">
                 <Link to="/login"><button className="btn-login">Login</button>
                 </Link>
+                </div>
                 </div>
             </div>
     );

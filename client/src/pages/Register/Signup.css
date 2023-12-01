@@ -47,13 +47,19 @@
 
 .register-box input {
     padding: 3px;
-    border: 2px solid black;
+    border: 1.5px solid black;
+    border-radius: 1rem;
 }
 
-.register-inner .btn-login p{
+.register-inner p{
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 1rem;
 }
+
+.buttons {
+    text-align: center;
+}
+
 .btn-login { 
     background-color: lightblue;
     text-align: center;
